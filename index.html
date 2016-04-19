@@ -1,12 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to Sedona</title>
+	</head>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+	<body>
+	    <header class="main-header">
+	    	<div class="container">
+	 			<nav class="main-navigation"> 
+	 				<ul>
+			            <li>
+			              <a href="#">Информация</a>
+			            </li>
+			            <li>
+			              <a href="#">Фото и видео</a>
+			            </li>
+			            <li>
+			              <img src="http://placehold.it" width="150" height="100" alt="Лого">
+			            </li>
+			            <li>
+			              <a href="#">Карта штата</a>
+			            </li>
+			            <li>
+			              <a href="#">Гостиницы</a>
+			            </li>
+	          		</ul>
+	        	</nav>
+			</div>
+	    </header>
 
-  </body>
+		<main class="container">
+			<div class="index-logo">
+	        	<img src="http://placehold.it" width="150" height="100" alt="WelcometoSedona">
+	      	</div>
+			
+			<div class="description">
+				<p class="sedonais">
+				седона — небольшой городок в аризоне, заслуживающий большего!
+				</p>
+				<p class="description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+			</div>
+
+			<div class="reasons">
+
+				<div class="reasons text">
+					<h3 class="reasons text">Настоящий городок</h3>
+					<span class="numbers text"> —№1— </span>
+					<p class="description text">седона — не аттракцион для туристов, там течет своя жизнь</p>
+				 </div>
+				<div class="reasons pics">
+					<!--фоточка тут-->
+				</div>
+
+
+				<div class="reasons blocks"> 
+				 	<div class="blocktype1">
+						<h3 class="reasons blocktype1">Жилье</h3>
+						<p class="description blocks">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</div>
+					<div class="blocktype1">
+						<h3 class="reasons blocktype1">Еда</h3>
+						<p class="description blocks">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+					</div>
+					<div class="blocktype1">
+						<h3 class="reasons blocktype1">Сувениры</h3>
+						<p class="description blocks">не только китайского, но и местного производства!</p>
+					</div>
+				</div>
+
+				<div class="reasons pics">
+					<!--фоточка тут-->
+				</div>
+				<div class="reasons text">
+					<h3 class="reasons text">Там есть мост дьявола</h3>
+					<span class="numbers text"> —№2— </span>
+					<p class="description text">да, по нему можно протись если конечно вы осмелитесь</p>
+				 </div>
+
+				<div class="reasons blocks"> 
+					<div class="blocktype2">
+						<h3 class="reasons blocks">Небольшая площадь</h3>
+						<span class="numbers blocks"> —№3— </span>
+						<p class="description blocks">все достопримечательности находятся очень близко</p>
+					</div>
+					<div class="blocktype2">
+						<h3 class="reasons text">красивая дорога</h3>
+						<span class="numbers blocks"> —№4— </span>
+						<p class="description blocks">ехать в седону из лас-вегаса совсем не скучно!</p>
+					</div>
+					<div class="blocktype2">
+						<h3 class="reasons text">Мало туристов</h3>
+						<span class="numbers blocks"> —№5— </span>
+						<p class="description blocks">большинство едет в гранд каньон и толпится там</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="interested"> 
+				<h2 class="interested">Заинтересовались?</h2>
+				<p class="description interested">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения 
+				гостиниц в седоне</p>
+
+				<form action="#" method="post">
+					<label>
+						Дата заезда:
+						<input type="date" name="choosedate">
+					</label><br>
+				   <label>
+				   		Дата выезда:
+						<input type="date" name="choosedate" value="4 июля 2016">
+					</label><br>
+					<label>
+						Взрослые:
+						<input type="number" name="quantity" min="1" max="100">
+					</label><br>
+					<label>
+						Дети:
+						<input type="number" name="quantity" min="1" max="100">
+					</label><br>
+					<input type="submit" name="find" value="Найти">
+				</form>
+			</div>
+		</main>
+
+		<footer class="main-footer">
+		    <div class="container">
+		        <div class="footer-tag">
+		        	<span class="footer-tag">#visitsedona</span>
+		        </div>
+		        <div class="footer-social">
+					<a class="social-btn social-btn-tw" href="#">Твиттер</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-yt" href="#">Youtube</a>
+		        </div>
+		        <div class="footer-copyright">
+			        <a class="copyright" href="https://htmlacademy.ru"> 
+			        <img src="http://placehold.it" width="150" height="100" alt="htmlacademylogo"> Website by</a>
+		        </div>
+		    </div>
+		</footer>
+	</body>
 </html>
