@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Welcome to Sedona</title>
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,18 +16,22 @@
             </a>
             <nav class="main-navigation">
                 <ul>
+                <div class="navigation-left">
                     <li>
                         <a href="#">Информация</a>
                     </li>
                     <li>
                         <a href="#">Фото и видео</a>
                     </li>
+                    </div>
+                    <div  class="navigation-right">
                     <li>
                         <a href="#">Карта штата</a>
                     </li>
-                    <li>
+                    <li class="navigation-right">
                         <a href="#">Гостиницы</a>
                     </li>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -35,8 +40,8 @@
                 <img src="http://placehold.it" width="150" height="100" alt="WelcometoSedona">
             </div>
             <div class="description">
-                <p class="sedona-is">седона — небольшой городок в аризоне, заслуживающий большего!</p>
-                <p class="block-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+                <h3>седона — небольшой городок в аризоне, заслуживающий большего!</h3>
+                <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </div>
             <div class="features">
                 <div class="features-info reason-item">
@@ -49,17 +54,17 @@
                 </div>
             </div>
             <div class="reason-list">
-                <div class="reason-item">
+                <div class="reason-item reason-house">
                     <span class="reason-title">Жилье</span>
-                    <p class="reason-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </div>
-                <div class="reason-item">
+                <div class="reason-item reason-burger">
                     <span class="reason-title">Еда</span>
-                    <p class="reason-text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </div>
-                <div class="reason-item">
+                <div class="reason-item reason-gift">
                     <span class="reason-title">Сувениры</span>
-                    <p class="reason-text">не только китайского, но и местного производства!</p>
+                    <p>не только китайского, но и местного производства!</p>
                 </div>
             </div>
             <div class="features features-inverse">
@@ -76,41 +81,41 @@
                 <div class="reason-item">
                     <span class="reason-title">Небольшая площадь</span>
                     <span class="reason-digit"> —№3— </span>
-                    <p class="reason-text">все достопримечательности находятся очень близко</p>
+                    <p>все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="reason-item">
                     <span class="reason-title">красивая дорога</span>
                     <span class="reason-digit"> —№4— </span>
-                    <p class="reason-text">ехать в седону из лас-вегаса совсем не скучно!</p>
+                    <p>ехать в седону из лас-вегаса совсем не скучно!</p>
                 </div>
                 <div class="reason-item">
                     <span class="reason-title">Мало туристов</span>
                     <span class="reason-digit"> —№5— </span>
-                    <p class="reason-text">большинство едет в гранд каньон и толпится там</p>
+                    <p>большинство едет в гранд каньон и толпится там</p>
                 </div>
             </div>
             <div class="interested">              
-                <span class="interested-title">Заинтересовались?</span>
-                <p class="reason-text">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <h2>Заинтересовались?</h2>
+                <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </div>
             <form action="#" method="post" class="form">
                 <div class="form-block">
                     <label for="date-of-arrival" class="form-label">Дата заезда:</label>
                     <div class="form-input">
-                        <input type="text" id="date-of-arrival"  name="choosedate" value="24 апреля 2016">
+                        <input type="text" id="date-of-arrival"  name="choosedate" placeholder="24 апреля 2016">
                     </div>
                 </div>
                 <div class="form-block">
                     <label for="date-of-departure" class="form-label">Дата выезда:</label>
                     <div class="form-input">
-                        <input type="text" id="date-of-departure" name="choosedate" value="4 июля 2016">
+                        <input type="text" id="date-of-departure" name="choosedate" placeholder="4 июля 2016">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-block">
                         <label for="adults" class="form-label">Взрослые:</label>
                         <div class="form-input form-controls">
-                            <input type="text" id="adults" name="quantity" value="2">
+                            <input type="text" id="adults" name="quantity-adutls" value="2">
                             <span class="control control-plus"></span>
                             <span class="control control-minus"></span>
                         </div>
@@ -118,7 +123,7 @@
                     <div class="form-block">
                         <label for="kids" class="form-label">Дети:</label>
                         <div class="form-input form-controls">
-                            <input type="text" id="kids" name="quantity" value="0">
+                            <input type="text" id="kids" name="quantity-kids" value="0">
                             <span class="control control-plus"></span>
                             <span class="control control-minus"></span>             
                         </div>
