@@ -1,15 +1,204 @@
 body {
-	font-size: 14px;
-	line-height: 26px;
-	font-style: bold;
-	color: #000000;
-	font-family: "PTSans", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 h2 {
-	font-size: 21px;
-	line-height: 26px;
-	font-style: bold;
-	color: #000000;
-	font-family: "PTSans", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 24px;
 }
+
+
+h3{
+  font-size: 21px;
+  line-height: 26px;
+}
+
+p {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #123311;
+}
+
+
+.main-header {
+  min-height: 55px;
+  background-color: #ffffff;
+  font-size: 0px;
+
+}
+
+
+.main-header:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.main-navigation ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  font-size: 0px;
+}
+
+
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 21px;
+ 
+}
+
+
+
+.navigation-left li {
+  width: 240px;
+  float: left;
+
+}
+
+
+.index-logo img {
+  display: block;
+  margin: 0 auto;
+  
+}
+
+
+.navigation-right li {
+  width: 240px;
+  float: right;
+  
+ 
+}
+
+.main-navigation a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  padding: 15px 70px;
+  vertical-align: top;
+}
+
+.description {
+  background-color: #ffffff;
+  min-height: 215px;
+  text-align: center;
+
+}
+
+.description h3 {
+  width: 445px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  padding-top: 58px;
+}
+
+.description p {
+  
+  
+  padding-bottom: 58px;
+}
+
+.main-background {
+  margin-bottom: 50px;
+
+}
+
+.features {
+min-height: 255px;
+margin: 0px;
+background-color: #333333;
+
+}
+
+.features .features-info {
+  text-align: center;
+
+  width: 396px;
+  float: left;
+  background-color: #81b3d2;
+}
+
+.features-img {
+  width: 792px;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+}
+
+.features:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+
+.reason-item {
+  width: 396px;
+  background-color: #ffffff;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+
+}
+
+.reason-item p {
+  width: 290px;
+  margin: 0 auto;
+
+}
+.reason-list:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.reason-list .reason-gray {
+  background-color: #eeeeee;
+}
+
+.interested {
+  background-color: #ffffff;
+  height: 290px;
+  text-align: center;
+}
+
+.interested h2 {
+  padding-top: 52px;
+}
+
+.interested p {
+  width: 442px;
+  margin: 0 auto;
+}
+
+.find-hotel-sedona {
+  background-color: #766357;
+  border: none;
+  padding: 30px 135px;
+  margin-top: 50px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+
