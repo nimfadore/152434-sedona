@@ -4,17 +4,18 @@
 <head>
     <meta charset="utf-8">
     <title>Welcome to Sedona</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <header class="main-header">
+      <header class="main-header">
             <a href="#" class="index-logo">
                 <img src="img/logo-index.png" width="69" height="56" alt="Лого">
             </a>
-            <nav class="main-navigation">
+            <nav class="main-navigation clearfix">
                 <ul>
                 <div class="navigation-left">
                     <li>
@@ -26,10 +27,10 @@
                     </div>
                     <div  class="navigation-right">
                     <li>
-                        <a href="#">Карта штата</a>
+                        <a href="#">Гостиницы</a>
                     </li>
                     <li class="navigation-right">
-                        <a href="#">Гостиницы</a>
+                        <a href="#">Карта штата</a>
                     </li>
                     </div>
                 </ul>
@@ -37,15 +38,15 @@
         </header>
         <main>
             <div class="main-background">
-                <img src="http://placehold.it" width="150" height="100" alt="WelcometoSedona">
+                <img src="img/index-bg.jpg" width="1200" height="800" alt="WelcometoSedona">
             </div>
             <div class="description">
                 <h3>седона — небольшой городок в аризоне, заслуживающий большего!</h3>
                 <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </div>
-            <div class="features">
+            <div class="features clearfix">
                 <div class="features-info reason-item">
-                    <span class="reason-title">настоящий городок</span>
+                    <span class="reason-title">настоящий городок</span><br>
                     <span class="reason-digit">—№1—</span>
                     <p class="reason-text">седона — не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
@@ -53,7 +54,7 @@
                     <img src="img/features-img1.jpg" width="800" height="255" alt="">
                 </div>
             </div>
-            <div class="reason-list">
+            <div class="reason-list clearfix">
                 <div class="reason-item reason-house">
                     <span class="reason-title">Жилье</span>
                     <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -69,27 +70,27 @@
             </div>
             <div class="features features-inverse">
                 <div class="features-info reason-item">
-                    <span class="reason-title">там есть мост дьявола</span>
+                    <span class="reason-title">там есть мост дьявола</span><br>
                     <span class="reason-digit">—№2—</span>
-                    <p class="reason-text">да, по нему можно протись если конечно вы осмелитесь</p>
+                    <p>да, по нему можно протись если конечно вы осмелитесь</p>
                 </div>
                 <div class="features-img">
                     <img src="img/features-img2.jpg" width="800" height="255" alt="">
                 </div>
             </div>
-            <div class="reason-list reason-gray">
+            <div class="reason-list reason-gray clearfix">
                 <div class="reason-item">
-                    <span class="reason-title">Небольшая площадь</span>
+                    <span class="reason-title">Небольшая площадь</span><br>
                     <span class="reason-digit"> —№3— </span>
                     <p>все достопримечательности находятся очень близко</p>
                 </div>
                 <div class="reason-item">
-                    <span class="reason-title">красивая дорога</span>
+                    <span class="reason-title">красивая дорога</span><br>
                     <span class="reason-digit"> —№4— </span>
                     <p>ехать в седону из лас-вегаса совсем не скучно!</p>
                 </div>
                 <div class="reason-item">
-                    <span class="reason-title">Мало туристов</span>
+                    <span class="reason-title">Мало туристов</span><br>
                     <span class="reason-digit"> —№5— </span>
                     <p>большинство едет в гранд каньон и толпится там</p>
                 </div>
@@ -97,8 +98,10 @@
             <div class="interested">              
                 <h2>Заинтересовались?</h2>
                 <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <button class="find-hotel-sedona">Поиск гостиницы в Седоне</button>
             </div>
             <form action="#" method="post" class="form">
+
                 <div class="form-block">
                     <label for="date-of-arrival" class="form-label">Дата заезда:</label>
                     <div class="form-input">
