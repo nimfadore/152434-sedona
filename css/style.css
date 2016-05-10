@@ -145,3 +145,51 @@ form {
   width: 33%
 }
 
+.searching-field {
+  background-color: #e122ee;
+  min-height: 217px;
+}
+
+.filter-item {
+  float: left;
+}
+
+.filter-right {
+  float: right;
+}
+
+.founded {
+  height: 85px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.founded-title {
+  float: left;
+}
+
+.founded-list {
+  float: left;
+}
+
+.founded-arrows {
+  float: right;
+}
+
+
+.hotel-item {
+  height: 150px;
+  background-color: #ffffff;
+}
+
+.hotel-img {
+  float: left;
+}
+
+.hotel-info {
+  float: left;
+}
+
+.hotel-status {
+  float: right;
+}
