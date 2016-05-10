@@ -5,6 +5,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  color: #000000;
 }
 
 h2 {
@@ -27,19 +28,48 @@ p {
 
 }
 
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
 .container {
   width: 1200px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
-.main-navigation {
- 
+.main-header {
+  background-color: #ffffff;
+  color: #000000;
+  height: 55px;
+  margin-bottom: 0px;
+
 }
 
-.navigation-left,
-.navigation-right {
-  width: 330px;
+.main-navigation a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0px;
+
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
+  padding: 18px 70px;
 }
 
 .navigation-left {
@@ -52,24 +82,43 @@ p {
 
 .index-logo {
   float: left;
+  margin-left: 60px;
+
 }
 
-.clearfix::after {
-  content: "";
-
-  display: table;
-  clear: both;
-}
 
 .main-background {
+  position: relative;
   width: 1200px;
+  height: 508px;
+  margin-bottom: 50px;  //*убрать потом. спросить че за х*//
   
+}
+
+
+.shape {
+  position: absolute;
+  bottom: 0px;
 }
 
 .description {
   width: 1200px;
   min-height: 215px;
   background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.description h3 {
+  margin: 0 auto;
+  width: 454px;
+  text-align: center;
+  padding-top: 63px;
+  padding-bottom: 35px;
+}
+
+.description p{
+  width: 505px;
+  margin: 0 auto;
 }
 
 
@@ -82,7 +131,39 @@ p {
   float: left;
   width: 33%;
   background-color: #81b3d2;
+  color: white;
+  max-height: 255px;
 }
+
+.reason-title {
+  display: block;
+  font-size: 21px;
+  line-height: 21px;
+  width: 164px;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.reason-digit {
+  display: block;
+  width: 45px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  margin: 0 auto;
+  padding-bottom: 27px;
+}
+
+.reason-text {
+  width: 304px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 37px;
+}
+
+
 
 .features-img {
   float: left;
@@ -98,19 +179,80 @@ p {
   float: left;
   width: 33%;
   background-color: #ffffff;
-
+  max-height: 330px;
+  position: relative;
 }
 
+.reason-house,
+.reason-burger,
+.reason-gift {
+  display: block;
+  width: 75px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 33px;
+}
+
+.reason-list .reason-title {
+  padding-top: 0px;
+  padding-bottom: 33px;
+}
+
+.reason-list p {
+  width: 290px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 0px;
+  padding-bottom: 80px;
+}
+
+.reason-gray {
+  max-height: 255px;
+}
  .reason-gray .reason-item {
   background-color: #eeeeee;
 }
 
+.reason-title-gray {
+  display: block;
+  font-size: 21px;
+  line-height: 21px;
+  width: 118px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+.reason-gray .reason-digit {
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+
 .interested {
+  position: relative;
   background-color: #ffffff;
   height: 292px;
 }
 
+.interested h2 {
+  padding-top: 53px;
+  padding-bottom: 33px;
+  width: 303px;
+  margin: 0 auto;
+}
+
+.interested p {
+  
+  width: 445px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .find-hotel-sedona {
+  position: absolute;
+  bottom: 0;
+  right: 27%;
   width: 568px;
   height: 87px;
   background-color: #766357;
@@ -122,6 +264,7 @@ p {
   text-transform: uppercase;
   border: none;
 
+
 }
 
 form {
@@ -129,6 +272,25 @@ form {
   height: 395px;
   margin: 0 auto;
 }
+
+.main-footer {
+  background-color: #ffffff;
+  height: 118px;
+}
+
+
+
+.footer-tag a {
+  display: block;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  margin-left: 136px;
+}
+
 
 .footer-tag {
   float: left;
@@ -144,6 +306,16 @@ form {
   float: right;
   width: 33%
 }
+
+.footer-copyright a {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+}
+
+
 
 .searching-field {
   background-color: #e122ee;
